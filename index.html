@@ -7,70 +7,70 @@
     <link rel="stylesheet" href="styles.css">
   </head>
   <body>
-    <h1 id="title">
-    Survey Form
-    </h1>
-    <p id="description">
-      A Certification Project
-    </p>
-      <form id="survey-form">
-        <div class="form">
-        <label id="name-label" for="name">Name</label>
-        <input id="name" required type="text" placeholder="Enter your name"/>
-        </div>
-        <div class="form">
-          <label id="email-label" for="email">Email</label>
-          <input id="email" required type="email" placeholder="Enter your email"/>
-        </div>
-        <div class="form">
-          <label id="number-label" for="number">Age</label>
-          <input id="number" type="number" min="13" max="120" placeholder="Enter your age"/>
-        </div>
-        <div class="form">
-          <label id="dropdown-label" for="dropdown"> Do you Program?
-          </label>
-          <select id="dropdown">
-            <option value="">Select one</option>
-            <option value="1">Yes</option>
-            <option value="2">No</option>
-         </select>
-        </div>
-        <div class="form">
-          <p>Do you like my survey?</p>
+    <div class="container">
+      <h1 id="title">
+      Survey Form
+      </h1>
+      <p id="description">
+        A Certification Project
+      </p>
+        <form id="survey-form">
+          <div class="form">
+          <label id="name-label" for="name">Name</label>
+          <input id="name" required type="text" placeholder="Enter your name"/>
+          </div>
+          <div class="form">
+            <label id="email-label" for="email">Email</label>
+            <input id="email" required type="email" placeholder="Enter your email"/>
+          </div>
+          <div class="form">
+            <label id="number-label" for="number">Age</label>
+            <input id="number" type="number" min="13" max="120" placeholder="Enter your age"/>
+          </div>
+          <div class="form">
+            <label id="dropdown-label" for="dropdown"> Do you Program?
+            </label>
+            <select id="dropdown">
+              <option value="">Select one</option>
+              <option value="1">Yes</option>
+              <option value="2">No</option>
+          </select>
+          </div>
+          <div class="form">
+            <p>Do you like my survey?</p>
+            <label>
+              <input class="radio" value="yes" type="radio" name="reccomendation"/>
+            Yes</label>
+            
+          </div>
           <label>
-            <input class="radio" value="yes" type="radio" name="reccomendation"/>
-          Yes</label>
+          <div class="form">
+              <input class="radio" value="no" type="radio" name="reccomendation"/>
+            No</label>
+          </div>
+          
+          <div class="form">
+            <p>What should I work on Next?</p>
+        <label>
+          <input name="next" value="websites" class="checkboxes" type="checkbox" />
+          Websites</label>
           <label>
-        </div>
-        <div class="form">
-            <input class="radio" value="unsure" type="radio" name="reccomendation"/>
-          Unsure</label>
-        </div>
-        <div class="form">
-            <input class="radio" value="no" type="radio" name="reccomendation"/>
-          No</label>
-        </div>
-        <div class="form">
-          <p>What should I work on Next?</p>
-       <label>
-         <input name="next" value="websites" class="checkboxes" type="checkbox" />
-        Websites</label>
-        <label>
-         <input name="next" value="apps" class="checkboxes" type="checkbox" />
-        Apps</label>
-        <label>
-         <input name="next" value="games" class="checkboxes" type="checkbox" />
-        Games</label>
-        </div>
-        <div class="form">
-          <label name="notes">Additional comments</label>
-          <textarea placeholder="I love your form" id="comments" class="textarea">
-            </textarea>      
-        </div>
-        <div class="form">
-          <button type="submit" id="submit" class="submit">Submit
-          </button>
-        </div>
-      </form>
+          <input name="next" value="apps" class="checkboxes" type="checkbox" />
+          Apps</label>
+          <label>
+          <input name="next" value="games" class="checkboxes" type="checkbox" />
+          Games</label>
+          </div>
+          <div class="form">
+            <label name="notes" class="notes">Additional comments</label>
+            <textarea placeholder="Enter your comment..." id="comments" class="textarea">
+              </textarea>      
+          </div>
+          <div class="form">
+            <button type="submit" id="submit" class="submit">Submit
+            </button>
+          </div>
+        </form>
+      </div>
   </body>
 </html>
